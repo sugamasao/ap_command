@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = ApCommand::VERSION
   gem.authors       = ["sugamasao"]
   gem.email         = ["sugamasao@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{JSON file to awesome print for command line tool.}
+  gem.summary       = %q{JSON file to awesome print for command line tool.}
+  gem.homepage      = "https://github.com/sugamasao/ap_command"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
