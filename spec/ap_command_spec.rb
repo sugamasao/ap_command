@@ -12,7 +12,7 @@ module ApCommand
           @file.close
         end
 
-        it { Application.invoke([@file.path]) }
+        it { expect {Application.invoke([@file.path])}.to_not raise_error }
 
         after do
           @file.unlink
