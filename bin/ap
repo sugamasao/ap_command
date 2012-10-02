@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'ap_command'
+require File.join(File.expand_path(File.dirname(__FILE__)), '..', 'lib', 'ap_command')
+
+ApCommand::Application.invoke(ARGV)
