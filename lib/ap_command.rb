@@ -44,7 +44,7 @@ module ApCommand
     # @return [void]
     def usage
       puts "usage:"
-      puts "%#{File.basename($0)} /path/to/jsonfile"
+      puts "% #{File.basename($0)} /path/to/file.json"
       puts "json file awsome print for command line tool."
       exit 
     end
