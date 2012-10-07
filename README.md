@@ -4,7 +4,7 @@ JSON file to awesome print for command line tool.
 
 dependency [awesome_print](https://github.com/michaeldv/awesome_print)
 
-※標準出力周りのテストが書けないのでだれか助けて
+※標準出力周りのテストが書けないのでだれか助けて!
 
 ## Installation
 
