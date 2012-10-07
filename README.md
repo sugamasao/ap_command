@@ -1,4 +1,5 @@
 # ApCommand
+[![Build Status](https://secure.travis-ci.org/sugamasao/ap_command.png)](http://travis-ci.org/sugamasao/ap_command)
 
 JSON file to awesome print for command line tool.
 
