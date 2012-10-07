@@ -1,5 +1,6 @@
 # encoding:utf-8
 
+require 'optparse'
 require 'json'
 
 require 'awesome_print'
@@ -17,19 +18,30 @@ module ApCommand
     # @param [Array] argv ARGV object.
     # @return [void]
     def run(argv)
+      opt = OptionParser.new
+      opt.on('-v', '--version') {|v| version}
+      opt.on('-h', '--help') {|v| usage}
+      opt.parse!(argv)
+
       path = argv.first.to_s
-      version if(path == '--version' or path == '-v')
-      usage if(path == '--help' or path == '-h')
-      usage unless(File.exists?(path))
+      usage("File NotFound(path=#{path})") unless(File.exists?(path))
       
       begin
         awesome(JSON.parse(File.read(path)))
       rescue JSON::ParserError => e 
-        puts "Error: #{e.class} message => #{e.message}"
-        puts
-        usage
+        usage("Error: #{e.class} message => #{e.message}")
       end
     end
+
+    # execute application shortcut.
+    #
+    # @param [Array] argv ARGV object.
+    # @return [void]
+    def self.invoke(argv)
+      self.new.run(argv)
+    end
+
+    private
 
     # call awesome_print.
     #
@@ -42,9 +54,10 @@ module ApCommand
     # show usage.
     #
     # @return [void]
-    def usage
-      puts "usage:"
-      puts "% #{File.basename($0)} /path/to/file.json"
+    def usage(message = nil)
+      puts message if message
+      puts "" if message
+      puts "usage: #{File.basename($0)} /path/to/file.json"
       puts "json file awsome print for command line tool."
       exit 
     end
@@ -57,14 +70,6 @@ module ApCommand
       exit
     end
 
-
-    # execute application shortcut.
-    #
-    # @param [Array] argv ARGV object.
-    # @return [void]
-    def self.invoke(argv)
-      self.new.run(argv)
-    end
   end
 end
 
