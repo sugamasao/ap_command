@@ -1,4 +1,4 @@
-# ApCommand [![Build Status](https://secure.travis-ci.org/sugamasao/ap_command.png)](http://travis-ci.org/sugamasao/ap_command)
+# ApCommand [![Build Status](https://secure.travis-ci.org/sugamasao/ap_command.png)](http://travis-ci.org/sugamasao/ap_command) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/sugamasao/ap_command)
 
 JSON file to awesome print for command line tool.
 
