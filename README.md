@@ -3,6 +3,7 @@
 [![Build Status](https://secure.travis-ci.org/sugamasao/ap_command.png)](http://travis-ci.org/sugamasao/ap_command)
 [![Gem Version](https://badge.fury.io/rb/ap_command.svg)](http://badge.fury.io/rb/ap_command)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/sugamasao/ap_command)
+[![Inline docs](http://inch-ci.org/github/sugamasao/ap_command.svg?branch=master)](http://inch-ci.org/github/sugamasao/ap_command)
 
 JSON file to awesome print for command line tool.
 
@@ -37,4 +38,3 @@ using `ap` command.
 MIT License.
 
 See LICENSE.txt file for details.
-
