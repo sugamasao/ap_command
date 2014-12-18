@@ -24,7 +24,7 @@ module ApCommand
       opt.parse!(argv)
 
       path = argv.first.to_s
-      usage("File NotFound(path=#{path})") unless(File.exists?(path))
+      usage("File NotFound(path=#{path})") unless(File.exist?(path))
       
       begin
         awesome(JSON.parse(File.read(path)))
