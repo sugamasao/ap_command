@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = ApCommand::VERSION
   gem.authors       = ["sugamasao"]
   gem.email         = ["sugamasao@gmail.com"]
-  gem.description   = %q{JSON file to awesome print for command line tool.}
-  gem.summary       = %q{JSON file to awesome print for command line tool.}
+  gem.description   = 'JSON file to awesome print for command line tool.'
+  gem.summary       = 'JSON file to awesome print for command line tool.'
   gem.homepage      = "https://github.com/sugamasao/ap_command"
 
   gem.files         = `git ls-files`.split($/)

@@ -116,8 +116,3 @@ Style/TrailingBlankLines:
 # Cop supports --auto-correct.
 Style/TrailingWhitespace:
   Enabled: false
-
-# Offense count: 2
-# Cop supports --auto-correct.
-Style/UnneededPercentQ:
-  Enabled: false
