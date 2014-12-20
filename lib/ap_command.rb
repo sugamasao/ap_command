@@ -19,8 +19,8 @@ module ApCommand
     # @return [void]
     def run(argv)
       opt = OptionParser.new
-      opt.on('-v', '--version') {|v| version}
-      opt.on('-h', '--help') {|v| usage}
+      opt.on('-v', '--version') {|_v| version}
+      opt.on('-h', '--help') {|_v| usage}
       opt.parse!(argv)
 
       path = argv.first.to_s
