@@ -69,6 +69,5 @@ module ApCommand
         end
       end
     end
-
   end
 end
