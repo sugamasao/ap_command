@@ -12,7 +12,6 @@ module ApCommand
 
   # ap_command main class.
   class Application
-
     # execute application.
     #
     # @param [Array] argv ARGV object.
@@ -69,7 +68,6 @@ module ApCommand
       puts "#{File.basename($0)} #{VERSION}"
       exit
     end
-
   end
 end
 
