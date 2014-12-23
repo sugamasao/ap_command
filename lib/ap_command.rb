@@ -9,7 +9,6 @@ require_relative "ap_command/version"
 # Awesome Print Command Line Tool.
 # @author sugamasao
 module ApCommand
-
   # ap_command main class.
   class Application
     # execute application.
